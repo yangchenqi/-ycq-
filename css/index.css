@@ -1,0 +1,283 @@
+    /*1. 背景样式 */
+    /*2.添加小圆点 */
+    
+    #fp-nav ul li a span {
+        /* 提高层叠性 */
+        background: #f40!important;
+    }
+    
+    .section1 {
+        background: #fadd67 url(../images/t1fpyqfltdxxaiulhh-990-600.png) no-repeat center bottom;
+    }
+    
+    .fly {
+        position: absolute;
+        right: 20%;
+        top: 10%;
+    }
+    /* 沙发的定位 */
+    
+    .shirt01 {
+        position: absolute;
+        left: 50%;
+        margin-left: -200px;
+        bottom: 335px;
+    }
+    /*沙发的动画*/
+    
+    .shirt-updown {
+        animation: shirt01 2s linear infinite;
+    }
+    
+    @keyframes shirt01 {
+        0% {
+            bottom: 335px
+        }
+        50% {
+            bottom: 360px
+        }
+        100% {
+            bottom: 335px
+        }
+    }
+    /* 小飞机的动画 */
+    
+    .updown {
+        animation: fly 2s linear infinite;
+    }
+    
+    @keyframes fly {
+        0% {
+            top: 10%;
+        }
+        50% {
+            top: 15%;
+        }
+        100% {
+            top: 10%;
+        }
+    }
+    
+    .goods {
+        position: absolute;
+        left: 50%;
+        margin-left: -400px;
+        bottom: 100px;
+    }
+    
+    .section2 {
+        background: #84a2d4 url(../images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+        z-index: 2;
+    }
+    
+    .computer {
+        width: 900px;
+        height: 500px;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 0;
+        background: rgba((0), 0, 0, .3);
+    }
+    
+    .search {
+        width: 222px;
+        height: 45px;
+        background: url(../images/search.png) no-repeat;
+        position: absolute;
+        right: -30px;
+    }
+    
+    .search-wrods {
+        position: absolute;
+        right: 32px;
+        top: 5px;
+        /* 后面要做淡入淡出的效果 */
+        opacity: 0;
+    }
+    
+    .search-02-1 {
+        position: absolute;
+        bottom: 450px;
+        right: 190px;
+        display: none;
+    }
+    /*要落下来的沙发*/
+    
+    .shirt-02 {
+        position: absolute;
+        bottom: 335px;
+        left: 395px;
+        display: none;
+        z-index: 10;
+    }
+    
+    .goods-02 {
+        height: 100px;
+        position: absolute;
+        display: none;
+        bottom: 217px;
+        right: 232px;
+    }
+    
+    .words-01,
+    .words-02 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 550px;
+    }
+    
+    .words-02 {
+        opacity: 0;
+    }
+    
+    .cover {
+        position: absolute;
+        bottom: 334px;
+        right: 455px;
+        width: 104px;
+        height: 90px;
+        z-index: 5;
+        background-color: #fff;
+        display: none;
+    }
+    
+    .section3 {
+        background: #ef674d;
+        z-index: 1;
+    }
+    
+    .main {
+        position: absolute;
+        width: 800px;
+        height: 500px;
+        background: url(../images/main.png);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+    }
+    
+    .select {
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        bottom: 49px;
+        right: -129px;
+    }
+    
+    .btn {
+        position: absolute;
+        bottom: -61px;
+        left: -95px;
+    }
+    
+    .shirt-03,
+    .t1f {
+        position: absolute;
+        left: 260px;
+        bottom: 147px;
+        display: none;
+    }
+    
+    .img {
+        top: 100px;
+        position: absolute;
+        left: -85px;
+    }
+    
+    .img-01-a {
+        opacity: 0;
+    }
+    
+    .btn btn-01-a {
+        opacity: 0;
+    }
+    /*第四屏制作start*/
+    
+    .section4 {
+        background: #fed url(../images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+    }
+    
+    .cloud {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /* 云彩第一组 */
+    
+    .cloud-back1 {
+        animation: cloud 60s linear infinite;
+    }
+    
+    @keyframes cloud {
+        0% {
+            left: 50%;
+        }
+        50% {
+            left: -10%;
+        }
+        100% {
+            left: 50%;
+        }
+    }
+    
+    .word {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+    }
+    
+    .words-04-a {
+        opacity: 0;
+    }
+    
+    .car {
+        width: 500px;
+        position: absolute;
+        /* background-color: pink; */
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .car-img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 200px;
+        /* 负值是往下叠加 */
+        z-index: -1;
+        display: none;
+    }
+    
+    .note {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 180px;
+        display: none;
+    }
+    
+    .note-img {
+        position: absolute;
+        top: 59px;
+        left: 58px;
+        opacity: 0;
+    }
+    
+    .section5 {
+        background: #d04759 url(../images/t1yisqfa4exxa3gmkg-2000-1500.png);
+    }
+    
+    .section6 {
+        background: #84d9ed url(../images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+    }
+    
+    #go {
+        position: fixed;
+        top: 5%;
+        right: 5%;
+        z-index: 999;
+    }
